@@ -97,7 +97,7 @@ Build a user list application using EXPO, optimized for performance and scalabil
 - Efficient use of `FlatList` and performance optimization.  
 - Proper Redux and API integration.  
 - Clean, reusable code for components like `UserCard`.  
-- Bonus points for offline support.  
+- Correct use of local storage 
 
 ---
 
