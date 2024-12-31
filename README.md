@@ -27,7 +27,8 @@ react-redux-task-manager/
 |   |   |-- redux/  
 |   |   |-- App.js  
 |   |-- package.json  
-|-- .gitignore```
+|-- .gitignore
+```
 
 ---
 
