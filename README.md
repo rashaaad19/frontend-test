@@ -41,22 +41,11 @@ Build a task management application using React hooks and Redux.
 1. **State Management (Redux):**  
    - Use Redux for global state to manage a list of tasks (id, title, priority, completed).
 
-2. **React Hooks:**  
-   - Use `useState`, `useEffect`, `useMemo`, and `useCallback`.  
-   - Create a custom hook, `useFilteredTasks`, to filter tasks.  
-
-3. **Features:**  
+2. **Features:**  
    - Add, edit, delete, and toggle task completion.  
    - Filter tasks by:  
      - Priority (`High`, `Medium`, `Low`).  
-     - Completion status (`Completed`, `Incomplete`).  
-   - Display task counts using `useMemo`.  
    - Persist tasks in `localStorage`.  
-
-4. **UI Requirements:**  
-   - Task list displaying the title, priority, and a toggle for completion status.  
-   - Task form for adding or editing tasks.  
-   - Filter section with dropdowns for priority and completion status.  
 
 ---
 
