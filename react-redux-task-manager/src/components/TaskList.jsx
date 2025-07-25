@@ -7,30 +7,37 @@ const TaskList = () => {
   const tasks = useSelector((state) => state.tasksSlice.items);
   const currentFilter = useSelector((state) => state.tasksSlice.currentFilter);
   const [selectedTask, setSelectedTask] = useState(null);
-  
+
   const handleEditSelect = (id) => {
     setSelectedTask(id);
     document.getElementById("my_edit_modal").showModal();
   };
 
-  console.log(currentFilter)
-  const displayedTasks = currentFilter==='all'
-    ? tasks
-    : tasks.filter((task) => task.priority === currentFilter);
+  const displayedTasks =
+    currentFilter === "all"
+      ? tasks
+      : tasks.filter((task) => task.priority === currentFilter);
+
   return (
     <div className="max-w-xl mx-auto mt-10 space-y-4">
       <EditModal task={selectedTask} />
 
-      {displayedTasks.map((task) => (
-        <TaskItem
-          title={task.title}
-          key={task.id}
-          id={task.id}
-          priority={task.priority}
-          status={task.completed}
-          handleEditSelect={handleEditSelect}
-        />
-      ))}
+      {displayedTasks.length > 0 &&
+        displayedTasks.map((task) => (
+          <TaskItem
+            title={task.title}
+            key={task.id}
+            id={task.id}
+            priority={task.priority}
+            status={task.completed}
+            handleEditSelect={handleEditSelect}
+          />
+        ))}
+      {displayedTasks.length === 0 && (
+        <div className="text-center text-gray-500">
+          <p>No tasks available.</p>
+        </div>
+      )}
     </div>
   );
 };
