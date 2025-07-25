@@ -22,7 +22,7 @@ const NewTaskForm = () => {
       <select
         required
         name="task-priority"
-        className="select select-primary w-28"
+        className="select select-primary w-32"
       >
         <option value={""} disabled={true}>
           Select priority
