@@ -59,26 +59,6 @@ Before you get started, make sure you have the following installed:
 
 ---
 
-## 📦 Dependencies
-
-Here are the main libraries used in this project:
-
-```json
-{
-  "@react-native-async-storage/async-storage": "2.1.2",
-  "@reduxjs/toolkit": "^2.8.2",
-  "expo": "~53.0.20",
-  "expo-status-bar": "~2.2.3",
-  "react": "19.0.0",
-  "react-native": "0.79.5",
-  "react-native-paper": "^5.14.5",
-  "react-native-vector-icons": "^10.3.0",
-  "react-redux": "^9.2.0",
-  "redux-persist": "^6.0.0"
-}
-```
-
----
 
 
 ## 📌 Notes
